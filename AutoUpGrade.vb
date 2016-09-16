@@ -69,7 +69,7 @@ Module AutoUpGrade
         '対象フォルダにあるファイル一覧の取得
         myAutoUpGrade = New AutoUpGradeUtility
         '// ADD 2005.05.31 東都）伊賀 CopyAutoUpGrade対応 START
-        myAutoUpGrade._ClientMutex = "is2_AutoUpGrade"
+        myAutoUpGrade.gClientMutex = "is2_AutoUpGrade"
         '// ADD 2005.05.31 東都）伊賀 CopyAutoUpGrade対応 END
         myRet = myAutoUpGrade.GetVersion(myFolderName, myFileName, myDownload, myDownloadOnly, myLocalExecute, myLogClear)
 
